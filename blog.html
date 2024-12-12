@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate Bangladesh</title>
+  <!-- Google Font -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+    body{
+      font-family: "Lexend", serif;
+    }
+  </style>
+  <!-- daisy UI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.19/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <header class="text-xl h-[270px] lg:h-[170px]">
+    <div class="fixed z-10 w-full">
+      <nav class="navbar justify-between bg-[rgb(249,247,243,0.97)] px-6 py-2">
+        <div>
+          <a id="home" class="btn text-xl bg-green-300">Home</a>
+        </div>
+        <div class="gap-2">
+          <img src="logo.png" alt="" class="hidden lg:block">
+          <p class="hidden lg:block">Donate Bangladesh</p>
+        </div>
+        <div class="gap-2">
+          <img src="coin.png" alt="">
+          <span id="initial-amount">5500</span> BDT
+        </div>
+      </nav>
+      <div class="flex items-center gap-2 justify-center bg-[#F9F7F3] pb-5 lg:hidden">
+        <img src="logo.png" alt="">
+        <p>Donate Bangladesh</p>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="px-8 lg:px-24">
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+        <div class="collapse-content">
+          <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a webpage as a hierarchical tree of objects, allowing developers to interact with and manipulate the content, structure, and styles of a website programmatically using JavaScript.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+        <div class="collapse-content">
+          <p>You can select an element from the DOM using JavaScript by leveraging the DOM API methods. These methods are provided by the document object, and they allow you to target elements in various ways, such as by ID, class, tag name, or CSS selectors. Such as:
+            <br>
+            document.getElementById();
+            <br>
+            document.getElementsByClassName();
+            <br>
+            document.getElementsByTagName();
+            <br>
+            document.querySelector();
+            <br>
+            document.querySelectorAll();
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">What is the event delegation in the context of the DOM and why is it useful?</div>
+        <div class="collapse-content">
+          <p>Event delegation is a technique in the DOM where you attach a single event listener to a parent element to manage events on its child elements. This works because events bubble up from the child to the parent (event propagation).
+            <br>
+            <br>
+          It is useful because-
+          <br>
+          1. Reduces the number of event listeners, improving performance.
+          <br>
+          2. Dynamically handles child elements, even if they are added after the event listener is set.
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+        <div class="collapse-content">
+          <p>To manipulate an element's attributes, use methods like setAttribute to add or update, getAttribute to retrieve, and removeAttribute to delete attributes. For styles, use the style property to directly set CSS, like element.style.color = 'red'; or element.style.backgroundColor = 'blue';.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+<script src="blog.js"></script>
+</html>
